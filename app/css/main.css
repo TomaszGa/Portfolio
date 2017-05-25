@@ -1,0 +1,173 @@
+/*==============
+=====GLOBAL=====
+==============*/
+body, html {
+  height: 100%;
+  font-family: "Montserrat", helvetica, arial; }
+
+/*==============
+=====NAVBAR=====
+==============*/
+.main-navbar {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  color: #46657a;
+  border-bottom: 1px solid #46657a;
+  z-index: 1;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navbar-logo {
+  margin-left: 4vw;
+  font-weight: 900; }
+
+.navbar-links {
+  margin-right: 4vw; }
+  .navbar-links a {
+    text-transform: uppercase;
+    padding: 0 1vw;
+    color: #46657a;
+    font-weight: 800; }
+
+/*==============
+=====HEADER=====
+==============*/
+.main-header {
+  position: relative;
+  background: url(/../img/triangles.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh; }
+
+.header-wrapper {
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  /* Standard syntax (must be last) */ }
+
+/*==============
+=====CONTENT=====
+==============*/
+.main-content {
+  color: #46657a;
+  position: relative;
+  bottom: 18%;
+  background-color: transparent;
+  text-align: center; }
+  .main-content h3 {
+    font-weight: 600; }
+  .main-content h2 {
+    font-weight: 900; }
+  .main-content h4 {
+    margin-top: 2rem;
+    font-weight: 600; }
+  .main-content hr {
+    width: 8%;
+    border-bottom: 5px solid #46657a; }
+  .main-content p {
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 300; }
+
+.fa-arrow-down {
+  margin-top: 0.5rem;
+  font-size: 3rem; }
+
+.about-section {
+  margin-top: 4rem; }
+
+.tech-icons {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 4rem; }
+  .tech-icons i {
+    margin: 1rem 0.5rem; }
+
+.intermission {
+  background: url(/../img/triangles.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 1px solid #46657a;
+  border-bottom: 1px solid #46657a;
+  height: 35vh;
+  margin-bottom: 3rem; }
+
+.img-container {
+  border: 1px solid #46657a;
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: auto; }
+  .img-container img {
+    display: block;
+    width: 100%; }
+  .img-container .img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    transition: .5s ease;
+    background-color: #46657a; }
+
+.overlay-text {
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.img-container:hover .img-overlay {
+  opacity: 0.7; }
+
+.img-container:hover .overlay-text {
+  opacity: 1; }
+
+/*==============
+=====FOOTER=====
+==============*/
+.main-footer {
+  text-align: center;
+  background-color: #46657a;
+  color: white; }
+  .main-footer h4 {
+    margin-top: 2rem; }
+  .main-footer .fa-stack {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem; }
+  .main-footer p {
+    margin-bottom: 2rem; }
+
+.fa-stack-2x {
+  color: white; }
+
+.fa-stack-1x {
+  color: #46657a; }
+
+p.footnote {
+  color: white;
+  text-align: left;
+  margin-left: 8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0; }
