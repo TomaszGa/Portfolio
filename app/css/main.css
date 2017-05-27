@@ -38,7 +38,7 @@ body, html {
 ==============*/
 .main-header {
   position: relative;
-  background: url(/../img/triangles.jpg);
+  background: url(../img/triangles.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 90vh; }
@@ -81,10 +81,13 @@ body, html {
 
 .fa-arrow-down {
   margin-top: 0.5rem;
-  font-size: 3rem; }
+  font-size: 3rem;
+  color: #46657a;
+  transition: 2s ease;
+  margin-bottom: 1rem; }
 
 .about-section {
-  margin-top: 4rem; }
+  margin-top: 3rem; }
 
 .tech-icons {
   margin: 2rem 0;
@@ -99,7 +102,7 @@ body, html {
     margin: 1rem 0.5rem; }
 
 .intermission {
-  background: url(/../img/triangles.jpg) center center;
+  background: url(../img/triangles.jpg) center center;
   background-size: cover;
   background-attachment: fixed;
   border-top: 1px solid #46657a;
@@ -123,7 +126,7 @@ body, html {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0;
     transition: .5s ease;
     background-color: #46657a; }
 
@@ -134,11 +137,19 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
+  .overlay-text p {
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 0 1rem; }
+  .overlay-text a {
+    color: white; }
 
 .img-container:hover .img-overlay {
-  opacity: 0.7; }
+  opacity: 0.95; }
 
 .img-container:hover .overlay-text {
   opacity: 1; }
@@ -167,7 +178,6 @@ body, html {
 
 p.footnote {
   color: white;
-  text-align: left;
-  margin-left: 8rem;
-  letter-spacing: 0.1rem;
-  margin-bottom: 0; }
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.1rem; }
