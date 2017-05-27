@@ -30,17 +30,29 @@ body, html{
 .navbar-logo{
 	margin-left: 4vw;
 	font-weight: 900;
+	font-size: 0.9rem;
 }
 .navbar-links{
-	margin-right: 4vw;
+	margin-right: 2vw;
 	a{
 		text-transform: uppercase;
 		padding: 0 1vw;
 		color: $header-text-color;
 		font-weight: 800;
+		font-size: 0.7rem;
 	}
 }
 
+@media screen and (min-width: 600px) {
+    .navbar-logo{
+    	font-size: 1.3rem;
+    }
+    .navbar-links{
+    	a{
+    		font-size: 1rem;
+    	}
+    }
+}
 /*==============
 =====HEADER=====
 ==============*/
@@ -74,16 +86,22 @@ body, html{
 	bottom: 18%;
 	background-color: transparent;
 	text-align: center;
-	h3{
-		font-weight: 600;
+	h1{
+		font-weight: 900;
+		font-size: 1.75rem;
 	}
 	h2{
-		font-weight: 900;
+		font-weight: 600;
+		font-size: 1.65rem;
+	}
+	h3{
+		margin-top: 2rem;
+		font-weight: 600;
 	}
 	h4{
 		margin-top: 2rem;
 		font-weight: 600;
-	}
+	}	
 	hr{
 		width: 8%;
 		border-bottom: 5px solid $header-text-color;
@@ -98,7 +116,6 @@ body, html{
 	margin-top: 0.5rem;
 	font-size: 3rem;
 	color: $header-text-color;
-	transition: 2s ease;
 	margin-bottom: 1rem;
 }
 .about-section{
@@ -152,7 +169,6 @@ margin-top: 3rem;
 .overlay-text {
   opacity: 0;
   color: white;
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -161,12 +177,17 @@ margin-top: 3rem;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   p{
-  	font-size: 1.3rem;
+  	font-size: 1.1rem;
   	text-align: left;
-  	padding: 0 1rem;
+  	padding: 0 0.4rem;
   }
   a{
   	color: white;
+  }
+  h4{
+  	margin-top: 0;
+  	background-color: white;
+  	color: $header-text-color;
   }
 }
 .img-container:hover .img-overlay {
