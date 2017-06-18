@@ -150,7 +150,7 @@ body, html {
     width: 8%;
     border-bottom: 5px solid #46657a; }
   .main-content p {
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
     font-weight: 300; }
 
